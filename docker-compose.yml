@@ -8,18 +8,18 @@ services:
       POSTGRES_PASSWORD: camunda
       POSTGRES_DB: camunda
     ports:
-      - "5432:5432"
+      - "5433:5432"
 
   camunda-node1:
     image: camunda/camunda-bpm-platform:latest
     environment:
       - DB_DRIVER=org.postgresql.Driver
-      - DB_URL=jdbc:postgresql://postgres:5432/camunda
+      - DB_URL=jdbc:postgresql://postgres:5433/camunda
       - DB_USERNAME=camunda
       - DB_PASSWORD=camunda
-      - WAIT_FOR=postgres:5432
+      - WAIT_FOR=postgres:5433
     ports:
-      - "8080:8080"
+      - "8580:8080"
     depends_on:
       - postgres
 
@@ -27,12 +27,12 @@ services:
     image: camunda/camunda-bpm-platform:latest
     environment:
       - DB_DRIVER=org.postgresql.Driver
-      - DB_URL=jdbc:postgresql://postgres:5432/camunda
+      - DB_URL=jdbc:postgresql://postgres:5433/camunda
       - DB_USERNAME=camunda
       - DB_PASSWORD=camunda
-      - WAIT_FOR=postgres:5432
+      - WAIT_FOR=postgres:5433
     ports:
-      - "8081:8080"
+      - "8581:8080"
     depends_on:
       - postgres
 
