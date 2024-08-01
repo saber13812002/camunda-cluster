@@ -21,7 +21,7 @@ services:
       - DB_PASSWORD=camunda
       - WAIT_FOR=postgres:5433
     ports:
-      - "8580:8080"
+      - "8581:8080"
     depends_on:
       - postgres
 
@@ -34,7 +34,7 @@ services:
       - DB_PASSWORD=camunda
       - WAIT_FOR=postgres:5433
     ports:
-      - "8581:8080"
+      - "8582:8080"
     depends_on:
       - postgres
 
