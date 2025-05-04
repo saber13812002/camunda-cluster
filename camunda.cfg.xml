@@ -2,5 +2,6 @@
   <properties>
     <!-- Disable CSRF Protection -->
     <property name="camunda.bpm.webapp.csrf.enabled" value="false"/>
+    <property name="camunda.bpm.password-hash-algorithm" value="SHA-512"/>
   </properties>
 </camunda-bpm-configuration>
