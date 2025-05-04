@@ -1,7 +1,8 @@
 <camunda-bpm-configuration xmlns="http://camunda.org/schema/1.0/engine">
   <properties>
     <!-- Disable CSRF Protection -->
-    <property name="camunda.bpm.webapp.csrf.enabled" value="false"/>
+    <property name="camunda.bpm.webapp.csrf.enabled"/>
     <property name="camunda.bpm.password-hash-algorithm" value="SHA-512"/>
+    <property name="camunda.bpm.webapp.authentication.enabled" value="false"/>
   </properties>
 </camunda-bpm-configuration>
