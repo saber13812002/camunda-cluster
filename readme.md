@@ -52,3 +52,14 @@ With these steps, the `admin` user has been created and assigned to the `admin` 
 * **Password**: `adminpassword`
 
 This process should allow you to access Camunda's tasklist, cockpit, admin panel, and welcome screen with full administrative privileges.
+
+
+
+
+از این صفحه شروع کنید
+
+http://192.168.100.37:8581/camunda-welcome/
+
+با یوزر دمو رمز دمو بروید داخل
+
+
